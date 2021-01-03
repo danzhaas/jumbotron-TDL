@@ -12,10 +12,13 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "sass": "node-sass --watch styles.scss styles.css"
   },
   "license": "0BSD",
   "dependencies": {
+    "@blueprintjs/core": "^3.36.0",
+    "axios": "^0.21.1",
     "gatsby": "^2.26.1",
     "gatsby-plugin-sass": "^2.8.0",
     "node-sass": "^5.0.0",
