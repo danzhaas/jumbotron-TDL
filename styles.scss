@@ -23,15 +23,13 @@ header, footer {
     }
 }
 
+p {
+    margin-bottom:0;
+}
+
 #layout-level {
     height:100vh;
     position:relative;
-}
-
-footer {
-    position:absolute;
-    bottom:0;
-    width:100%
 }
 
 header, footer, main {
@@ -52,7 +50,7 @@ h4 {
     margin:1
 }
 
-#delete-btn {
+.float-right, #delete-btn{
     float:right;
 }
 
@@ -62,6 +60,30 @@ h4 {
 
 .w100 {
     width:100%
+}
+
+.level-1 {
+    margin-left:3vw
+}
+.level-2 {
+    margin-left:6vw
+}
+.level-3 {
+    margin-left:9vw
+}
+.level-4 {
+    margin-left:12vw
+}
+.level-5 {
+    margin-left:15vw
+}
+
+input[type=text] {
+    width:100%
+}
+
+#list-toggle {
+    font-size:1rem
 }
 
 @media only screen and (min-width: 600px) {

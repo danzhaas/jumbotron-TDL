@@ -16,14 +16,12 @@ header, footer {
     padding: 1rem 0;
     color: white; }
 
+p {
+  margin-bottom: 0; }
+
 #layout-level {
   height: 100vh;
   position: relative; }
-
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%; }
 
 header, footer, main {
   padding: 1rem; }
@@ -39,7 +37,7 @@ h4 {
   flex-direction: row;
   margin: 1; }
 
-#delete-btn {
+.float-right, #delete-btn {
   float: right; }
 
 .w50 {
@@ -47,6 +45,27 @@ h4 {
 
 .w100 {
   width: 100%; }
+
+.level-1 {
+  margin-left: 3vw; }
+
+.level-2 {
+  margin-left: 6vw; }
+
+.level-3 {
+  margin-left: 9vw; }
+
+.level-4 {
+  margin-left: 12vw; }
+
+.level-5 {
+  margin-left: 15vw; }
+
+input[type=text] {
+  width: 100%; }
+
+#list-toggle {
+  font-size: 1rem; }
 
 @media only screen and (min-width: 600px) {
   header, footer {
