@@ -86,6 +86,13 @@ input[type=text] {
     font-size:1rem
 }
 
+.jumbotron {
+    input {
+        font-size: 15vh;
+        height:fit-content
+    }
+}
+
 @media only screen and (min-width: 600px) {
     header, footer {
         margin-bottom:0;    

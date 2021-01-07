@@ -2,6 +2,7 @@ import React from "react"
 import { Button } from "@blueprintjs/core"
 import Layout from "../components/layout"
 import TaskList from '../components/TaskList'
+import Jumbotron from '../components/Jumbotron'
 import axios from 'axios'
 
 
@@ -30,7 +31,8 @@ const IndexPage = () => {
       <p>This app makes it easier for you to stay focussed by showing only one (jumbo-sized) task at a time. </p>
       <br />
       <Button> Unfocus / Refocus </Button>
-      <TaskList listname={listname} />
+      {/* <TaskList listname={listname} /> */}
+      <Jumbotron />
     </Layout>
   )
 }

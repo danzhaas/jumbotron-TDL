@@ -11,10 +11,9 @@ function Task( props ) {
         level,
         subtasks,
         timecreated,
-        timedone
+        timedone, 
+        jumbotron
     } = props;
-
-    
 
     // const onChange = e => setFormData({
     //     ...formData, [e.target.name]: e.target.value    // computed property name
@@ -44,7 +43,7 @@ function Task( props ) {
     // }
 
     return (
-        <Card interactive={true} elevation={Elevation.TWO} className={"level-"+level} >
+        <Card interactive={true} elevation={Elevation.TWO} id={id} className={"jumbotron level-" + level} >
             <div className="row">
                 <Checkbox checked={done} />
                 <input className="bp3-input .modifier" type="text" dir="auto" value={description} />
