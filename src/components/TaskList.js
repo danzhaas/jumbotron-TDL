@@ -1,16 +1,35 @@
 import React from "react"
 import { Button } from "@blueprintjs/core"
 import Task from '../components/Task'
-import tasks from '../../public/db-mockup/db'
+import axios from 'axios'
 
 const TaskList = ({ children }) => {
+
+    var tasks;
+    const onOpen = async (req,res) => {
+        try {
+            const config = {
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            };
+
+            const res = await axios.get('http://localhost:5000/api/task/', config);
+            console.log(res);
+            tasks=({res});
+            console.log(tasks);
+        } catch (err) {
+            console.error(err.response.data)
+        }
+    }
+    onOpen();
 
     const listname = "Current";
 
     var organizedTasks;
 
-
     function organizeTasks(filter) {
+
         // input tasks
         // filter: by done or not or both
 
@@ -35,7 +54,8 @@ const TaskList = ({ children }) => {
                 <h2>{ listname }</h2>
                 <Button id="list-toggle">{"See Completed"}</Button>
             </div>
-            {tasks.map(task => (<Task {...task} />))}
+            <p>{tasks}</p>
+            {/* {tasks.map(task => (<Task {...task} />))} */}
             {/* {renderTasks()} */}
             <Button id="add-task">Add Task</Button>
         </>

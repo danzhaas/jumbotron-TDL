@@ -1,5 +1,6 @@
 body {
-  background-color: lightgray; }
+  background-color: lightgray;
+  height: 100vh; }
 
 header {
   margin-bottom: 1rem; }
@@ -15,6 +16,11 @@ header, footer {
     margin: 0 auto;
     padding: 1rem 0;
     color: white; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%; }
 
 p {
   margin-bottom: 0; }

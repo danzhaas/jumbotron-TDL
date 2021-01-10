@@ -45,8 +45,8 @@ function Task( props ) {
     return (
         <Card interactive={true} elevation={Elevation.TWO} id={id} className={"jumbotron level-" + level} >
             <div className="row">
-                <Checkbox checked={done} />
-                <input className="bp3-input .modifier" type="text" dir="auto" value={description} />
+                <Checkbox defaultChecked={done} />
+                <input className="bp3-input .modifier" type="text" dir="auto" defaultValue={description} />
             </div>
             <div className="row w-100">
                 <Button id="focus-btn">Focus</Button>
